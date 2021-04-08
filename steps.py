@@ -6,7 +6,7 @@
 
 #use kaggle datasets (look up some)
 
-#write a script to ingest said data. kaggle api*** make it generic so they have to input their kaggle username (include error handling)
+#write a script to ingest said data. kaggle api*** (include error handling)
 
 #write another script to convert the file type of said data (include error handling)
 

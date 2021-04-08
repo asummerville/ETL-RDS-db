@@ -16,7 +16,9 @@
 
 #make sure to include a summary of what happend and where the file ended up
 
-#write a "main" script that asks for the parameter and then just executes each of the above scripts
+#write a "main" executable (CMD) script that takes one parameter (a url) and then just executes each of the above scripts
+
+#README with instructions on how to use the container. tell them to run "main.py" with a url as the parameter
 
 ##DOCKER
 

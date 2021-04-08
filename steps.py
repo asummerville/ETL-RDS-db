@@ -4,9 +4,9 @@
 
 ##SCRIPTING
 
-#figure out what data source i'll use. possibly a url source (multiple)
+#use kaggle datasets (look up some)
 
-#write a script to ingest said data (include error handling)
+#write a script to ingest said data. kaggle api*** make it generic so they have to input their kaggle username (include error handling)
 
 #write another script to convert the file type of said data (include error handling)
 
@@ -17,6 +17,7 @@
 #make sure to include a summary of what happend and where the file ended up
 
 #write a "main" executable (CMD) script that takes one parameter (a url) and then just executes each of the above scripts
+#maybe if the user runs main without a parameter it gives a useful message (instructions)
 
 #README with instructions on how to use the container. tell them to run "main.py" with a url as the parameter
 

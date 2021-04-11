@@ -18,19 +18,19 @@ $ingest_script
 sleep 2
 echo "Fetch complete"
 
+#transform file
+echo "Transforming file..."
+transform_script="./transform.py"
+$transform_script
+sleep 2
+echo "Transformation complete"
+
 # #convert the file type to SQL
 # echo "Converting file..."
 # convert_script="./convert.py"
 # $convert_script
 # sleep 2
 # echo "Conversion complete"
-
-# #transform file
-# echo "Transforming file..."
-# transform_script="./transform.py"
-# $transform_script
-# sleep 2
-# echo "Transformation complete"
 
 # #push to RDS
 # echo "Pushing to RDS database..."

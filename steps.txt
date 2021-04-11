@@ -27,5 +27,5 @@ steps:
 #TO DO:
 
 -choose a dataset to work with (so the ingest script will be complete)
--start the convert script (figure out how to access the data variable in the other module)
+-start the convert script
 -maybe ask neal about pushing to a RDS database and how that'll work...

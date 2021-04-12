@@ -29,3 +29,9 @@ steps:
 -choose a dataset to work with (so the ingest script will be complete)
 -start the convert script
 -maybe ask neal about pushing to a RDS database and how that'll work...
+
+#User instructions
+
+-look at https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data_o.csv for the dataset
+-input parameters into the main.sh script (file name, kaggle_username, kaggle_key, possibly sql stuff...)
+-script will fetch the requested file, tranform it, and push it to a sql database

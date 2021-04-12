@@ -2,17 +2,12 @@
 
 set -e
 
-#create env variable with the url parameter the user inputs
-
-# $1 will be the dataset file name
-#find better way to ask for inputs...
-export file=$1
-export KAGGLE_USERNAME=$2
-export KAGGLE_KEY=$3
-export host_name=$4
-export user_name=$5
-export user_password=$6
-export db_name=$7
+#welcome message and ask for inputs:
+echo "Starting..."
+welcome_script="./welcome.py"
+$welcome_script
+sleep 2
+echo "Let's get started:"
 
 # # #run each ETL py script:
 

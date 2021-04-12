@@ -34,7 +34,7 @@ def execute_query(connection, query):
 
 host_name = 'test-db.c5rxb5jruwlq.us-east-2.rds.amazonaws.com'
 user_name = 'ads3pu'
-user_password = 'lebron10'
+
 db_name = 'ds3002'
 
 create_server_connection(host_name, user_name, user_password, db_name)

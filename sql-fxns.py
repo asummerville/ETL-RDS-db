@@ -37,7 +37,7 @@ execute_query(connection, query)
 
 
 #function to establish connection with a sql server database
-def create_server_connection(host_name, user_name, user_password, db_name):
+def create_db_connection(host_name, user_name, user_password, db_name):
     connection = None
     try:
         connection = mysql.connector.connect(

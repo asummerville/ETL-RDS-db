@@ -14,4 +14,9 @@ df = df[['artists', 'popularity', 'danceability', 'energy']]
 
 df = df.sort_values('popularity', ascending=False)
 
-df.head()
+df = df.head(500)
+
+#df.head()
+
+#write to csv
+df.to_csv('./df.csv')

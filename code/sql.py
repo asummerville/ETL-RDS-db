@@ -60,3 +60,5 @@ for row in list(range(0,len(df))):
     cursor.execute(sql, (pop_val, dance_val, en_val, ac_val))
 connection.commit()
 
+del os.environ['user_password']
+del os.environ['KAGGLE_KEY']

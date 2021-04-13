@@ -8,9 +8,15 @@ import zipfile
 api = KaggleApi()
 api.authenticate()
 
-file = str(os.getenv('file'))
+file_name = os.getenv('file_name')
 
-api.dataset_download_file('yamaerenay/spotify-dataset-19212020-160k-tracks', file_name=file, path="./")
+api.dataset_download_file('yamaerenay/spotify-dataset-19212020-160k-tracks', file_name=file_name, path="./")
 
-with zipfile.ZipFile(f'./{file}.zip', 'r') as zipref:
-    zipref.extractall('./')
+#if file name contains .zip, unzip it
+
+try:
+    with zipfile.ZipFile(f'./{file_name}.zip', 'r') as zipref:
+        zipref.extractall('./')
+except:
+    pass
+

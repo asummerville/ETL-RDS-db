@@ -24,12 +24,6 @@ steps:
 #create a dockerfile in this folder that maps the folder and has a CMD to execute the main script
 
 
-#TO DO:
-
--choose a dataset to work with (so the ingest script will be complete)
--start the convert script
--maybe ask neal about pushing to a RDS database and how that'll work...
-
 #User instructions
 
 -look at https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data_o.csv for the dataset

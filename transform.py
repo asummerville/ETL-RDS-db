@@ -5,12 +5,14 @@
 import pandas as pd
 import os
 
-file = str(os.getenv('file'))
+file_name = os.getenv('file_name')
 
-data = pd.read_csv(f'./{file}') 
+data = pd.read_csv(f'./{file_name}') 
 df = pd.DataFrame(data)
 
-df = df[['artists', 'popularity', 'danceability', 'energy']]
+df = df[['popularity', 'danceability', 'energy', 'acousticness']]
+
+df = df.astype({'popularity': 'float', 'danceability': 'float', 'energy': 'float', 'acousticness': 'float'})
 
 df = df.sort_values('popularity', ascending=False)
 

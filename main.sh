@@ -2,12 +2,21 @@
 
 set -e
 
-#welcome message and ask for inputs:
-echo "Starting..."
-welcome_script="./welcome.py"
-$welcome_script
-sleep 2
-echo "Let's get started:"
+export file_name=$1
+export KAGGLE_USERNAME=$2
+export KAGGLE_KEY=$3
+export host_name=$4
+export user_name=$5
+export user_password=$6
+export db_name=$7
+
+
+# #welcome message and ask for inputs:
+# echo "Starting..."
+# welcome_script="./welcome.py"
+# $welcome_script
+# sleep 2
+# echo "Let's get started:"
 
 # # #run each ETL py script:
 
@@ -37,3 +46,10 @@ echo "Your table has been shipped to a database!"
 # summary_script="./summary.py"
 # $summary_script
 
+unset file_name
+unset KAGGLE_USERNAME
+unset KAGGLE_KEY
+unset host_name
+unset user_name
+unset user_password
+unset db_name

@@ -1,6 +1,3 @@
-os
 kaggle
-kaggle.api.kaggle_api_extended
-zipfile
 pandas
 mysql.connector

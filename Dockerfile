@@ -1,11 +1,9 @@
-FROM ubuntu:18.04
+FROM python:3.8.5
 
-RUN apt-get update && apt-get install -y \
-    python3 python3-dev gcc \
-    python3-pip musl-dev g++ \
-    libffi-dev openssl
+COPY requirements.txt requirements.txt 
 
-COPY requirements.txt /root/requirements.txt
-RUN python3 -m pip install -r /root/requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-COPY code /usr/local/bin/code
+COPY code code
+
+ENTRYPOINT [ "./code/main.sh" ]

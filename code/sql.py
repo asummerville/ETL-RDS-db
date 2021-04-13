@@ -34,7 +34,7 @@ def execute_query(connection, query):
         print(f"Error: '{err}'")
 
 #env variables + other data
-df = pd.read_csv('./df.csv') 
+df = pd.read_csv('./code/df.csv') 
 file_name = os.getenv('file_name')
 host_name = os.getenv('host_name')
 user_name = os.getenv('user_name')

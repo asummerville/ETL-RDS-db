@@ -4,7 +4,7 @@
 
 ## Overview
 
-The purpose of this project is to extract, transform, and send files from a kaggle spotify dataset to a MySQL database.
+The purpose of this project is to extract, transform, and send files from a kaggle spotify dataset to a MySQL database. The resulting table sent to the database will contain 500 observations of the 'popularity', 'danceability', 'energy', and 'acousticness' of whatever data file was selected by the user.
 
 ## Usage
 

@@ -3,7 +3,15 @@
 import os
 import getpass
 
-file_name = input("File to ship to database: ")
+
+files_list = ['data.csv', 'data_by_artist.csv', 'data_by_artist_o.csv', 'data_by_genres.csv', 'data_by_genres_o.csv', 'data_by_year.csv', 'data_by_year_o.csv', 'data_o.csv', 'data_w_genres.csv', 'data_w_genres_o.csv']
+
+while True:
+    file_name = input("File to ship to database: ")
+    if file_name in files_list:
+        break
+    else:
+        print('Enter a valid file name (ex. data.csv, data_by_genres.csv, etc.)')
 os.environ['file_name'] = str(file_name)
 
 KAGGLE_USERNAME = input("Kaggle username: ")

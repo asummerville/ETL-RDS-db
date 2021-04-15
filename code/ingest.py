@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 import os
 import kaggle
@@ -10,11 +10,11 @@ api.authenticate()
 
 file_name = os.getenv('file_name')
 
-api.dataset_download_file('yamaerenay/spotify-dataset-19212020-160k-tracks', file_name=file_name, path="./code")
+api.dataset_download_file('yamaerenay/spotify-dataset-19212020-160k-tracks', file_name=file_name, path="./")
 
 try:
-    with zipfile.ZipFile(f'./code/{file_name}.zip', 'r') as zipref:
-        zipref.extractall('./code')
+    with zipfile.ZipFile(f'./{file_name}.zip', 'r') as zipref:
+        zipref.extractall('./')
 except:
     pass
 

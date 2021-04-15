@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 #convert csv to sql and push it to a db
 
@@ -17,7 +17,6 @@ def create_server_connection(host_name, user_name, user_password, db_name):
             passwd=user_password,
             database=db_name
         )
-        print("MySQL Database connection successful")
     except Error as err:
         print(f"Error: '{err}'")
 
@@ -29,12 +28,11 @@ def execute_query(connection, query):
     try:
         cursor.execute(query)
         connection.commit()
-        print("Query executed successfully")
     except Error as err:
         print(f"Error: '{err}'")
 
 #env variables + other data
-df = pd.read_csv('./code/df.csv') 
+df = pd.read_csv('./df.csv') 
 file_name = os.getenv('file_name')
 host_name = os.getenv('host_name')
 user_name = os.getenv('user_name')

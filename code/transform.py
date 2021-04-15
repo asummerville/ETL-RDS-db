@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 #transform file
 
@@ -7,7 +7,7 @@ import os
 
 file_name = os.getenv('file_name')
 
-data = pd.read_csv(f'./code/{file_name}') 
+data = pd.read_csv(f'./{file_name}') 
 df = pd.DataFrame(data)
 
 df = df[['popularity', 'danceability', 'energy', 'acousticness']]
@@ -21,4 +21,4 @@ df = df.head(500)
 #df.head()
 
 #write to csv
-df.to_csv('./code/df.csv')
+df.to_csv('./df.csv')

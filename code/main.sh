@@ -5,7 +5,7 @@ set -e
 
 #welcome message and ask for inputs:
 echo "Starting..."
-welcome_script="./code/welcome.py"
+welcome_script="./welcome.py"
 $welcome_script
 sleep 2
 echo "Let's get started:"
@@ -14,21 +14,21 @@ echo "Let's get started:"
 
 #grab the data using the kaggle API
 echo "Attempting fetch..."
-ingest_script="./code/ingest.py"
+ingest_script="./ingest.py"
 $ingest_script
 sleep 2
 echo "Fetch complete"
 
 #transform file
 echo "Transforming file..."
-transform_script="./code/transform.py"
+transform_script="./transform.py"
 $transform_script
 sleep 2
 echo "Transformation complete"
 
 #add data to sql table and push to a db
 echo "Sending to database..."
-sql_script="./code/sql.py"
+sql_script="./sql.py"
 $sql_script
 sleep 2
 echo "Your table has been shipped to a database!"

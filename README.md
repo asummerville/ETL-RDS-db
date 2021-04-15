@@ -8,7 +8,7 @@ The purpose of this project is to extract, transform, and send files from a kagg
 
 ## Usage
 
-To use the program, run this docker container `docker run -it ads3pu/dataproject:latest` and the program will automatically start
+To use the program, run this docker container `docker run -it ads3pu/dataproject:latest` and the program will automatically start. Alternatively, clone this repo locally, `cd code`, and `./main.py` to execute the program.
 
 ## Inputs
 

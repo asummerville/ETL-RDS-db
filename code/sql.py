@@ -52,10 +52,10 @@ execute_query(connection, table_query)
 cursor = connection.cursor()
 for row in list(range(0,len(df))):
     sql = f'INSERT INTO {f}(popularity, danceability, energy, acousticness) VALUES (%s,%s,%s,%s)'
-    pop_val = df['popularity'].iloc[row]
-    dance_val = df['danceability'].iloc[row]
-    en_val = df['energy'].iloc[row]
-    ac_val = df['acousticness'].iloc[row]
+    pop_val = float(df['popularity'].iloc[row])
+    dance_val = float(df['danceability'].iloc[row])
+    en_val = float(df['energy'].iloc[row])
+    ac_val = float(df['acousticness'].iloc[row])
     cursor.execute(sql, (pop_val, dance_val, en_val, ac_val))
 connection.commit()
 

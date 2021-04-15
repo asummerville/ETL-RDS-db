@@ -17,7 +17,7 @@ os.environ['file_name'] = str(file_name)
 KAGGLE_USERNAME = input("Kaggle username: ")
 os.environ['KAGGLE_USERNAME'] = str(KAGGLE_USERNAME)
 
-KAGGLE_KEY = input("Kaggle key: ")
+KAGGLE_KEY = getpass.getpass("Kaggle key: ")
 os.environ['KAGGLE_KEY'] = str(KAGGLE_KEY)
 
 host_name = input("Server host name: ")

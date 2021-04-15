@@ -12,7 +12,11 @@ df = pd.DataFrame(data)
 
 df = df[['popularity', 'danceability', 'energy', 'acousticness']]
 
-df = df.astype({'popularity': 'float', 'danceability': 'float', 'energy': 'float', 'acousticness': 'float'})
+#df = df.astype({'popularity': 'int32', 'danceability': 'int32', 'energy': 'int32', 'acousticness': 'int32'})
+
+df = df.astype(str)
+
+#df.dtypes
 
 df = df.sort_values('popularity', ascending=False)
 

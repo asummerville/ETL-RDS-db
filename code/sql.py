@@ -17,6 +17,7 @@ def create_server_connection(host_name, user_name, user_password, db_name):
             passwd=user_password,
             database=db_name
         )
+        print('Database connection successful')
     except Error as err:
         print(f"Error: '{err}'")
 
@@ -44,7 +45,7 @@ connection = create_server_connection(host_name, user_name, user_password, db_na
 f = file_name.replace('.csv', '')
 
 #create new table
-table_query = f'CREATE TABLE {f} (popularity float(2), danceability float(4), energy float(4), acousticness float(4))'
+table_query = f'CREATE TABLE {f} (popularity float, danceability float, energy float, acousticness float)'
 execute_query(connection, table_query)
 
 #add data from df to table

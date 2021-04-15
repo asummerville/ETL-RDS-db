@@ -21,3 +21,7 @@ You'll be asked for a series of inputs:
  - **user_name** : your MySQL username
  - **user_password** : your MySQL password (will be deleted from env after program runs)
  - **db_name** : the database you want the file to be pushed to
+
+## Sample
+
+![](dataproject-1-sample.png)
